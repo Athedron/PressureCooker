@@ -56,12 +56,13 @@ public class RopeSpawner : MonoBehaviour
                         parentObject.transform);
 
             tmp.transform.eulerAngles = new Vector3(180, 0, 0);
-            tmp.gameObject.AddComponent<Throwable>();
+            
+            //tmp.gameObject.AddComponent<Throwable>();
 
-            tmp.gameObject.GetComponent<Throwable>().onHeldUpdate.AddListener((Hand) => 
-            { 
-                Climb(); 
-            });
+            //tmp.gameObject.GetComponent<Throwable>().onHeldUpdate.AddListener((Hand) => 
+            //{ 
+            //    Climb(); 
+            //});
 
             tmp.name = partPrefab.name + ": " + parentObject.transform.childCount.ToString();
 
