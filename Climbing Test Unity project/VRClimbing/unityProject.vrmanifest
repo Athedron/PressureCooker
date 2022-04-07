@@ -1,0 +1,16 @@
+{
+  "source": "Unity",
+  "applications": [
+    {
+      "app_key": "application.generated.unity.vrclimbing.exe",
+      "launch_type": "url",
+      "url": "steam://launch/",
+      "action_manifest_path": "G:\\School\\VR Minor\\Pressure cooker\\Climbing Test Unity project\\VRClimbing\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "strings": {
+        "en_us": {
+          "name": "VRClimbing [Testing]"
+        }
+      }
+    }
+  ]
+}

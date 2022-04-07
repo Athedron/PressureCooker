@@ -1,0 +1,177 @@
+/* Variables */
+:root{
+  --bodyNavHeight: 150px;
+  --maxContentWidth: 1200px;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.centerContent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body{
+  color: black;
+  /* color: #5DADE2; */
+}
+
+h3{
+  margin-top: 2em;
+  margin-bottom: 1em;
+  color: #5DADE2;
+}
+
+nav{
+  background-color: #BCC9C8;
+  height: var(--bodyNavHeight);
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+nav .logo{
+  height: 90%;
+  margin-top: 5%;
+}
+
+#navContainer{
+  max-width: var(--maxContentWidth);
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#navContent{
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+}
+#navContent a{
+  text-decoration: none;
+  padding: 1em;
+  margin: 1em;
+  background-color: yellow;
+
+  transition: .2s;
+  border-radius: 5px;
+}
+#navContent a:hover{
+  transform: scale(1.05);
+  background-color: pink;
+  border-radius: 10px
+}
+
+#hamburger{
+  width: 50px;
+  height: 50px;
+  background-color: purple;
+  display: none;
+}
+
+main{
+  background-color: #D1D7D7;
+  margin-top: var(--bodyNavHeight);
+}
+main h2{
+  text-align: center;
+  margin-top: 10vh;
+  padding-top: var(--bodyNavHeight);
+}
+
+main .Img{
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-right: 2em;
+  margin-left: 2em;
+
+  width: 280px;
+  height: 420px;
+}
+
+main .Img2{
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-right: 2em;
+  margin-left: 2em;
+
+  height: 60%;
+  width: 60%;
+}
+
+main .Img3{
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-right: 2em;
+  margin-left: 2em;
+
+  height: 40%;
+  width: 40%;
+}
+
+main .Alinea{
+  margin-top: 2em;
+  margin-bottom: 2em;
+  /* margin-right: 2em;
+  margin-left: 2em; */
+}
+
+main .link{
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#contentContainer{
+  max-width: var(--maxContentWidth);
+  background-color: white;
+  width: 100%;
+  max-width: calc(var(--maxContentWidth) - 2em);
+  padding: 1em;
+}
+
+#kop1{
+}
+
+footer{
+  background-color: #737C7B;
+  color: white;
+  height: 100px;
+}
+
+.portfolio{
+  color: #FFC300;
+  margin: 10px;
+}
+
+@media only screen and (max-width: 930px) {
+  #navContent{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    width: 100vw;
+    margin-top: var(--bodyNavHeight);
+    align-items: flex-start;
+  }
+  #navContent.show{
+    display: flex;
+  }
+
+  #hamburger{
+    display: block;
+  }
+
+  nav .logo{
+    margin-left: 5%;
+  }
+}
